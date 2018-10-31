@@ -1,0 +1,19 @@
+/** 字体图标 */
+$tabbarSize: 1.2em;
+$url: './assets/img/';
+
+.icon {
+  display: inline-block;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  height: $tabbarSize;
+  width: $tabbarSize;
+}
+
+/* .icon-back {
+  background-image: url($url+'back.png');
+} */
+
+/** 字体图标 end */
