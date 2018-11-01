@@ -6,8 +6,10 @@
  */
 import * as React from 'react';
 import './header.scss';
-import {tabbarData} from '../components/tabbar/tabbar.model';
+import { tabbarData } from '../components/tabbar/tabbar.model';
 import Tabbar from '../components/tabbar/tabbar';
+import SearchWrapper from '../components/search-wrapper/search-wrapper';
+import { hotData } from '../components/search-wrapper/search-wrapper.model';
 
 class Header extends React.Component {
 
@@ -15,8 +17,9 @@ class Header extends React.Component {
         super(props);
     }
     public render() {
-        return <div className='header-page flex'>
-            <Tabbar data={tabbarData} onNodeClick={this.onTabbarClick}/>
+        return <div className='header-page'>
+            <Tabbar data={tabbarData} onNodeClick={this.onTabbarClick} />
+            <SearchWrapper data={hotData} />
         </div>
     }
 
