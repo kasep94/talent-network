@@ -7,8 +7,8 @@
 
 import axios from 'axios';
 
-export class Util {
-    public httpPost (url: string, data: object): Promise<object> {
+export const Util = {
+    httpPost: (url: string, data: object): Promise<object> => {
         return new Promise(((resolve, reject) => {
             axios.post(url, data)
             .then((res) => {

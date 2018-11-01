@@ -1,8 +1,30 @@
-@import './theme.css';
 @import './layout.css';
 @import './icon.scss';
+@import './theme.css';
 
 body {
   font-family: PingFangSC-Regular;
 }
 
+.main {
+  width: 1198px;
+  width: 1198px;
+  margin: 0 auto;
+}
+
+.cl-red {
+  color: $red;
+}
+
+.cl-gray {
+  color: $gray;
+}
+
+.shadow:hover {
+  box-shadow: 0 0 10px 0 rgba(56, 81, 76, .12);
+}
+
+.a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

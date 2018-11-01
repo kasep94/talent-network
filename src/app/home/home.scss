@@ -1,37 +1,55 @@
-.App {
-  text-align: center;
-  color: $red;
-}
+.home-page {
+  header {
+    position: relative;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+    .right-carousel {
+      width: 880px;
+      height: 490px;
+    }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+    .left-sort-comp {
+      z-index: 2;
+    }
 
-.App-title {
-  font-size: 1.5em;
-}
+    .left-nav:hover {
+      .menu {
+        display: block;
+      }
+    }
 
-.App-intro {
-  font-size: large;
-}
+    .menu {
+      display: none;
+      position: absolute;
+      width: 780px;
+      height: 491px;
+      background-color: white;
+      left: 318px;
+      top: 0;
+      z-index: 1;
+      border: 1px solid $b-1;
+      border-left: 0;
+      box-shadow: 10px 0 10px 0 rgba(56, 81, 76, .12);
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+      p {
+        width: 245px;
+        margin-left: 10px;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+        display: inline-block;
+      }
+    }
+  }
 }
 
 /* For demo */
+.ant-carousel {
+  width: 850px;
+  margin-left: 30px;
+}
+
 .ant-carousel .slick-slide {
   text-align: center;
-  height: 160px;
   line-height: 160px;
   background: #364d79;
   overflow: hidden;

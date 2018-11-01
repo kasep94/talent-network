@@ -1,0 +1,15 @@
+.left-sort-comp {
+  width: 318px;
+  p {
+    height: 50px;
+    padding: 0 10px 0 20px;
+    border: 1px solid $b-1;
+    margin-bottom: -1px;
+    background-color: $bg-1;
+  }
+  p:hover {
+    cursor: pointer;
+    border-right: 1px solid white;
+    background: white;
+  }
+}

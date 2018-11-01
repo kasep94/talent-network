@@ -1,0 +1,36 @@
+.tabbar-comp {
+    margin-left: 200px;
+    margin-top: 8px;
+    z-index: 1;
+    & {
+        font-size: 18px;
+        color: $b-3;
+    }
+    p {
+        display: inline-block;
+        margin-right: 60px;
+        font-weight:300;
+    }
+    p:hover {
+        cursor: pointer;
+        p::after {
+            content: '';
+            border-bottom: 2px solid $b-2;
+            width: 24px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 13px;
+        }
+    }
+    .active {
+        color: $black;
+    }
+    .active::after {
+        content: '';
+        border-bottom: 2px solid $b-2;
+        width: 24px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 13px;
+    }
+}

@@ -1,4 +1,10 @@
 /** flex布局 */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /**
 *  ——————-
 * |   ●   |
@@ -37,6 +43,12 @@
   justify-content: space-between;
 }
 
+.both-sides-center {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
 /**
   *  ————————-
   * |         |
@@ -72,10 +84,10 @@
   * |         |
   *  ————————-
   */
-  .both-left-center {
-    display: flex;
-    align-items: center;
-  }
+.both-left-center {
+  display: flex;
+  align-items: center;
+}
 
 /**
 *  ——————-

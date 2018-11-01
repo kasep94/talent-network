@@ -12,8 +12,10 @@ $url: './assets/img/';
   width: $tabbarSize;
 }
 
-/* .icon-back {
-  background-image: url($url+'back.png');
-} */
+
+
+.icon-arrow {
+  background-image: url($url+'arrow.png');
+}
 
 /** 字体图标 end */

@@ -21,7 +21,7 @@ import routes from './routing';
 
 
 const RouteWithSubRoutes = (route: any) => (
-  <Route path={route.path} component={route.component}/>
+  <Route path={route.path} component={route.component} />
 )
 
 /**
@@ -29,23 +29,31 @@ const RouteWithSubRoutes = (route: any) => (
  */
 const init = () => {
   const RouteConfigExample = () => {
-      return (
+    return (
       <Router>
-          <div>
-            <Switch>
-              <Route exact={true} path='/' component={Header}/>
-              {childrens.map((route, i) => {
-                return (<RouteWithSubRoutes key={i} {...route}/>
-              )})}
-            </Switch>
-            <Switch>
+        <div>
+
+          <Switch>
+            <Route exact={true} path='/' component={Header} />
+            {childrens.map((route, i) => {
+              return (<RouteWithSubRoutes key={i} {...route} />
+              )
+            })}
+          </Switch>
+          <div className='main'>
+            <Switch >
               {routes.map((route, i) => {
-                return (<RouteWithSubRoutes key={i} {...route}/>
-              )})}
+                return (<RouteWithSubRoutes key={i} {...route} />
+                )
+              })}
             </Switch>
+
           </div>
+
+        </div>
       </Router>
-  )}
+    )
+  }
 
   ReactDOM.render(<RouteConfigExample />, document.getElementById('root') as HTMLElement);
 }
