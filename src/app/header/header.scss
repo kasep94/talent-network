@@ -1,6 +1,63 @@
 .header-page {
   margin-bottom: 20px;
+  width: 100%;
+  min-width: $mWidth;
+  .get-code {
+    cursor: pointer;
+  }
+  .header-top {
+    background-color: $black;
+    color: $b-8;
+    padding: 0 20px;
+    height: 30px;
+
+    span:hover {
+      cursor: pointer;
+      color: white;
+    }
+
+    .line {
+      margin: 0 10px;
+    }
+  }
+
   .tabbar-comp {
     height: 50px;
+  }
+
+  .content {
+    border-radius: 2px;
+  }
+
+  .popup-main {
+    height: 260px;
+    width: 320px;
+    border-radius: 5px;
+
+    .both-sides-center {
+      height: 40px;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+  }
+
+  .ant-tabs-nav-scroll {
+    @include flexCenter;
+  }
+
+  .ant-tabs-content.ant-tabs-content-animated {
+    margin-top: 25px;
+  }
+
+  .ant-tabs-tabpane.ant-tabs-tabpane-active {
+    width: 240px !important;
+    margin: 0 auto;
+    margin-left: 40px;
+  }
+
+  span.ant-input-affix-wrapper:nth-of-type(2) {
+    margin-top: 20px;
   }
 }
